@@ -197,7 +197,7 @@ function Deals() {
       <DragDropContext onDragEnd={onDragEnd}>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {statuses.map((status) => (
-            <Droppable droppableId={status} key={status}>
+            <Droppable droppableId={status} key={status} isDropDisabled={false} isCombineEnabled={false} ignoreContainerClipping={false}>
               {(provided, snapshot) => (
                 <div
                   ref={provided.innerRef}
