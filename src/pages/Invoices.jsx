@@ -18,6 +18,8 @@ function Invoices() {
       amount,
       date: new Date()
     });
+    setDealId('')
+    setAmount('')
     const res = await API.get('/invoices');
     setInvoices(res.data);
   };

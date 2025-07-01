@@ -17,6 +17,7 @@ function Companies() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await API.post('/companies', form);
+    setForm({ name: '', industry: '', address: '', website: '' })
     fetchCompanies();
   };
 

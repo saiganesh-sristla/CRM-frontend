@@ -16,6 +16,7 @@ function Contacts() {
     await API.post('/contacts', form);
     const res = await API.get('/contacts');
     setContacts(res.data);
+    setForm({ name: '', email: '', phone: '', tag: '', company: '' })
   };
 
   return (
