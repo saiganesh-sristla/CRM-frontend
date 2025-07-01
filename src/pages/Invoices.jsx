@@ -198,7 +198,7 @@ function Invoices() {
                 <option value="">Choose a deal...</option>
                 {deals.map(deal => (
                   <option key={deal._id} value={deal._id}>
-                    {deal.title} - {formatCurrency(deal.value || 0)}
+                    {deal.title}
                   </option>
                 ))}
               </select>
